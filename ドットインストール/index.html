@@ -11,24 +11,38 @@
         background-color: skyblue;
         cursor: pointer;
         transition: 0.8s;
+        margin: 10px;
       }
       .circle {
         background: pink;
         border-radius: 50%;
         transition-property: rotate(360deg);
       }
+      body {
+        display: flex;
+        flex-wrap: wrap;
+      }
     </style>
 
   </head>
   <body>
     <div class="box" id="target"></div>
+    <div class="box" id="target2"></div>
+    <div class="box" id="target3"></div>
     <script>
       'use strict'
-      const target = document.getElementById('target')
+      const target1 = document.getElementById('target')
+      const target2 = document.getElementById('target2')
+      const target3 = document.getElementById('target3')
       
-      target.addEventListener('click',() => {
-        target.classList.toggle('circle');
-        
+      target1.addEventListener('click',() => {
+        target1.classList.toggle('circle');
+      });
+      target2.addEventListener('click',() => {
+        target2.classList.toggle('circle');
+      });
+      target3.addEventListener('click',() => {
+        target3.classList.toggle('circle');
       });
       
     </script>
