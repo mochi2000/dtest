@@ -27,25 +27,43 @@
 
   function xxx(t) {
     let star = Math.floor(t / 1000);
-    if(star % 10  === 0 ){
+    let b = document.getElementById('b')
+    // let c = document.getElementById('c')
+
+    if(star % 10  === 0 && star % 60  === 0) {
+      const p = document.createElement('p');
+      let val = 'a';
+      p.setAttribute("id",val);
+      b.appendChild(p);
+      p.textContent = "★" ;
+    } else if(star % 10 === 0) {
       const p = document.createElement('p');
       let val = 'a';
       p.setAttribute("id",val);
       
-      document.body.appendChild(p);
-      document.getElementsByClassName('a').textContent = "★" ;
+      b.appendChild(p);
+      p.textContent = "☆" ;
     }
   }
 
   function xxxx(t) {
     let star = Math.floor(t / 1000);
-    if(star % 20  === 0 ){
+    let b = document.getElementById('b')
+    // let c = document.getElementById('c')
+
+    if(star % 10  === 0 && star % 60  === 0) {
       const p = document.createElement('p');
       let val = 'a';
-
       p.setAttribute("id",val);
-      document.body.appendChild(p);
-      document.getElementsByClassName('a').textContent = "★" ;
+      b.appendChild(p);
+      p.textContent = "★" ;
+    } else if(star % 10 === 0) {
+      const p = document.createElement('p');
+      let val = 'a';
+      p.setAttribute("id",val);
+      
+      b.appendChild(p);
+      p.textContent = "☆" ;
     }
   }
 
@@ -93,5 +111,8 @@
         if (dom) {
         dom.parentNode.removeChild(dom);
       }
+
+      document.getElementById('b').innerHTML = '';  
+      // document.getElementById('c').innerHTML = ''; 
   });
 })();
