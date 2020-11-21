@@ -10,6 +10,24 @@
   var timerId;
   var timeToadd = 0;
 
+  let c1 = document.getElementById('c1') 
+  let c2 = document.getElementById('c2') 
+  
+  let t1 = document.getElementById('tama')
+  let t2 = document.getElementById('tama2') 
+
+  t2.style.display = 'none';
+
+  c1.addEventListener('click', function() {
+    t2.style.display = 'none';
+    t1.style.display = 'flex';
+  });
+
+  c2.addEventListener('click', function() {
+      t1.style.display = 'none';
+      t2.style.display = 'flex';
+    });
+
   function updateTimetText(){
 
       var m = Math.floor(elapsedTime / 60000);
@@ -70,8 +88,7 @@
   function countUp(){
 
       timerId = setTimeout(function(){
-          let c1 = document.getElementById('c1') 
-          let c2 = document.getElementById('c2') 
+          
           elapsedTime = Date.now() - startTime + timeToadd;
           updateTimetText()
 
