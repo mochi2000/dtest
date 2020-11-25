@@ -1,11 +1,16 @@
 'use strict';
 
-let price = 150;
+let price = 500;
 
-console.log(price * 140);
-console.log(price * 160);
+// console.log(price * 140);
+// console.log(price * 160);
 
-price = 170;
+price++;
+price += 100;
+price--;
+price -= 100;
+price *= 100;
+price /= 100;
 
-console.log(price * 140);
-console.log(price * 160);
+// console.log(price * 140);
+// console.log(price * 160);
