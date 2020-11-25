@@ -1,8 +1,16 @@
 'use strict';
 
-console.log('5' * 3);
+const price = 1200;
 
-//+のみ文字列の連結
-console.log('5' + 3);
-//数字に変換
-console.log(parseInt('5') + 3);
+console.log(price > 1000);
+console.log(price < 1000);
+console.log(price >= 1000);
+console.log(price <= 1000);
+console.log(price === 1000);
+console.log(price !== 1000);
+
+
+//false - 0,null,undefined,'',false
+//true - それ以外
+console.log(Boolean(0));
+console.log(Boolean('hello'));
