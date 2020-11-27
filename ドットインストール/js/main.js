@@ -1,9 +1,9 @@
 'use strict';
 
-function showAd() {
-  console.log('ad')
+function showAd(message = 'ad') {
+  console.log(`${message}`);
 }
 
-showAd();
+showAd('Header ad');
 console.log('aaa')
 showAd();
