@@ -2,5 +2,9 @@
 
 {
   const scores = [80,90,40];
-  console.log(scores);
+  
+  scores[2] = 22;
+  //定数でも配列の要素には代入できる
+
+  console.log(scores.length)
 }
