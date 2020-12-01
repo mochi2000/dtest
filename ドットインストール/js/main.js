@@ -1,11 +1,12 @@
 'use strict';
 
 {
-  const scores = [80,90,40,70];
+  const otherScores = [10,20];
+  const scores = [80,90,40,70, ...otherScores];
   
-  scores.splice(1,1,40,50);
 
-  for (let i =0; i < scores.length; i++) {
-    console.log(`Score ${i}: ${scores[i]}`);
+  function sum(a,b) {
+    console.log(a + b);
   }
+  sum(...otherScores);
 }
