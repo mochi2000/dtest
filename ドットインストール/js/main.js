@@ -3,8 +3,7 @@
 {
   const scores = [80,90,40,70];
 
-  scores.forEach((score,index) => {
-    console.log(`Score: ${index}: ${score}`)
-  });
+  const updateScore = scores.map(scores => scores+20);
+  console.log(updateScore);
 }
 
