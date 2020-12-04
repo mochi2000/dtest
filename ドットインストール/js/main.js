@@ -1,9 +1,9 @@
 'use strict';
 
 {
-  const scores = [80,90,40,70];
+  const scores = [80,90,40,71];
 
-  const updateScore = scores.map(scores => scores+20);
-  console.log(updateScore);
+   const evenScores = scores.filter(score => score % 2 === 0);
+   console.log(evenScores);
 }
 
