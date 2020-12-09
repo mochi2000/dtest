@@ -1,21 +1,11 @@
 'use strict';
 
 {
-  const point = {
-    x:100, 
-    y:100,
-  };
+  let x = [1,2];
+  let y = x;
+  x[0] = 5;
 
-  const keys = Object.keys(point);
-  keys.forEach(key => {
-    console.log(`Key: ${key} Value:${point[key]}`)
-  })
-
-  const points = [
-    {x: 30, y: 20},
-    {x: 10, y: 50},
-    {x: 40, y: 40},
-  ];
-  console.log(points[1].y)
+  console.log(x);
+  console.log(y);
 }
 
