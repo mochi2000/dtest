@@ -1,15 +1,21 @@
 'use strict';
 
 {
-  const str = [2019,11,14];
+  const scores = [10,3,9];
 
-    console.log(str.join(''))
-  
-    const t = '17:08:24';
+  let sum = 0;
 
-    const [hour, minute, second] = t.split(':');
-    console.log(hour);
-    console.log(minute);
-    console.log(second);
+  scores.forEach(score => {
+    sum += score;
+  });
+
+  const avg = sum / scores.length;
+
+  console.log(Math.floor(avg));
+  console.log(Math.ceil(avg));
+  console.log(Math.round(avg));
+  console.log(avg.toFixed(3));
+
+  console.log(Math.random());
 }
 
